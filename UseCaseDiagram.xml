@@ -1,0 +1,46 @@
+<diagram title="Pet Shop 4.0 System">
+	<node id="User">
+		<relationship type="association" target="Create Account"></relationship>
+		<relationship type="association" target="Login"/>
+		<relationship type="association" target="Place Order"/>
+	</node>
+	<node id="Customer">
+		<relationship type="association" target="Login"/>
+		<relationship type="association" target="Place Order"/>
+	</node>
+	<node id="Admin">
+		<relationship type="association" target="Edit Data"/>
+		<relationship type="association" target="Edit Settings"/>
+	</node>
+	<node id="Database">
+		<relationship type="association" target="Create Account"/>
+		<relationship type="association" target="Login"/>
+		<relationship type="association" target="Check Inventory"/>
+		<relationship type="association" target="Edit Data"/>
+	</node>
+	<node id="Create Account">
+	</node>
+	<node id="Login">
+	</node>
+	<node id="Place Order">
+		<relationship type="association" target="Place Immediate Order"/>
+	</node>
+	<node id="Place Immediate Order">
+		<relationship type="include" target="Check Inventory"/>
+		<relationship type="extend" target="Process Payment"/>
+		<relationship type="extend" target="Write Audit Log"/>
+		<relationship type="extend" target="Place Back Order"/>
+	</node>
+	<node id="Check Inventory">
+	</node>
+	<node id="Process Payment">
+	</node>
+	<node id="Write Audit Log">
+	</node>
+	<node id="Place Back Order">
+	</node>
+	<node id="Edit Data">
+	</node>
+	<node id="Edit Settings">
+	</node>
+</diagram>
