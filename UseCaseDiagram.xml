@@ -1,46 +1,46 @@
 <diagram title="Pet Shop 4.0 System">
-	<node id="User">
+	<node id="User" type="Actor">
 		<relationship type="association" target="Create Account"></relationship>
 		<relationship type="association" target="Login"/>
 		<relationship type="association" target="Place Order"/>
 	</node>
-	<node id="Customer">
+	<node id="Customer" type="Actor">
 		<relationship type="association" target="Login"/>
 		<relationship type="association" target="Place Order"/>
 	</node>
-	<node id="Admin">
+	<node id="Admin" type="Actor">
 		<relationship type="association" target="Edit Data"/>
 		<relationship type="association" target="Edit Settings"/>
 	</node>
-	<node id="Database">
+	<node id="Database" type="Actor">
 		<relationship type="association" target="Create Account"/>
 		<relationship type="association" target="Login"/>
 		<relationship type="association" target="Check Inventory"/>
 		<relationship type="association" target="Edit Data"/>
 	</node>
-	<node id="Create Account">
+	<node id="Create Account" type="Case">
 	</node>
-	<node id="Login">
+	<node id="Login" type="Case">
 	</node>
-	<node id="Place Order">
+	<node id="Place Order" type="Case">
 		<relationship type="association" target="Place Immediate Order"/>
 	</node>
-	<node id="Place Immediate Order">
+	<node id="Place Immediate Order" type="Case">
 		<relationship type="include" target="Check Inventory"/>
 		<relationship type="extend" target="Process Payment"/>
 		<relationship type="extend" target="Write Audit Log"/>
 		<relationship type="extend" target="Place Back Order"/>
 	</node>
-	<node id="Check Inventory">
+	<node id="Check Inventory" type="Case">
 	</node>
-	<node id="Process Payment">
+	<node id="Process Payment" type="Case">
 	</node>
-	<node id="Write Audit Log">
+	<node id="Write Audit Log" type="Case">
 	</node>
-	<node id="Place Back Order">
+	<node id="Place Back Order" type="Case">
 	</node>
-	<node id="Edit Data">
+	<node id="Edit Data" type="Case">
 	</node>
-	<node id="Edit Settings">
+	<node id="Edit Settings" type="Case">
 	</node>
 </diagram>
