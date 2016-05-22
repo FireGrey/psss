@@ -1,3 +1,10 @@
+------------------------------------------------------
+The documentation and related deliverables are in Documentation/
+The digital copies of references are in References/
+The Source code is in Source/
+A pre-compiled binary is in Executable/
+------------------------------------------------------
+
 This program has been tested with Visual Studio Ultimate 2013 Version 12.0 using Visual Studio 2013 v120 platform toolset and running on Windows 7 SP1.
 
 
