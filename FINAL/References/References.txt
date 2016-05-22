@@ -1,1 +1,9 @@
-These are the digital copies of all cited references
+These are the digital copies of all cited references.
+
+Excluding two books:
+Bittner, K. (2002). Use case modeling: Addison-Wesley Longman Publishing Co., Inc.
+Bundy, A., & Wallen, L. (1984). Alpha/Beta Pruning Catalogue of Artificial Intelligence Tools (pp. 4-4): Springer
+
+Excluding two websites:
+Goodrich, M. (2006). Minimax and Alpha-Beta Pruning.   Retrieved from https://students.cs.byu.edu/~cs670ta/Lectures/Minimax.html
+Jones, J. (n.d.). Decision Theory.   Retrieved from https://people.richland.edu/james/summer02/m160/decision.html
